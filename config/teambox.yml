@@ -5,7 +5,7 @@
 # Configuration shared between all environments:
 defaults: &defaults
   # The domain from where your app is served
-  app_domain: localhost
+  app_domain: rsgteambox.heroku.com
 
   # How many activities should activity feeds display?
   activities_per_page: 25
