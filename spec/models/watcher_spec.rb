@@ -264,3 +264,17 @@ describe Watcher do
 
 end
 
+
+# == Schema Information
+#
+# Table name: watchers
+#
+#  id             :integer(4)      not null, primary key
+#  user_id        :integer(4)
+#  project_id     :integer(4)
+#  watchable_id   :integer(4)
+#  watchable_type :string(255)
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+

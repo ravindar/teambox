@@ -111,3 +111,13 @@ describe Card do
   end
 end
 
+
+# == Schema Information
+#
+# Table name: cards
+#
+#  id      :integer(4)      not null, primary key
+#  user_id :integer(4)
+#  public  :boolean(1)      default(FALSE)
+#
+

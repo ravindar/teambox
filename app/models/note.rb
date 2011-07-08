@@ -72,3 +72,20 @@ class Note < RoleRecord
   end
   
 end
+# == Schema Information
+#
+# Table name: notes
+#
+#  id              :integer(4)      not null, primary key
+#  page_id         :integer(4)
+#  project_id      :integer(4)
+#  name            :string(255)
+#  body            :text
+#  body_html       :text
+#  position        :integer(4)
+#  last_comment_id :integer(4)
+#  created_at      :datetime
+#  updated_at      :datetime
+#  deleted         :boolean(1)      default(FALSE), not null
+#
+

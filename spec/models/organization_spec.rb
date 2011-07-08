@@ -172,3 +172,24 @@ describe Organization do
   end
 
 end
+
+# == Schema Information
+#
+# Table name: organizations
+#
+#  id                :integer(4)      not null, primary key
+#  name              :string(255)
+#  permalink         :string(255)     not null
+#  language          :string(255)     default("en")
+#  time_zone         :string(255)     default("Eastern Time (US & Canada)")
+#  domain            :string(255)
+#  description       :text
+#  logo_file_name    :string(255)
+#  logo_content_type :string(255)
+#  logo_file_size    :integer(4)
+#  created_at        :datetime
+#  updated_at        :datetime
+#  settings          :text
+#  deleted           :boolean(1)      default(FALSE), not null
+#
+

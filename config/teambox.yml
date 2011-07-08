@@ -5,7 +5,7 @@
 # Configuration shared between all environments:
 defaults: &defaults
   # The domain from where your app is served
-  app_domain: rsgteambox.heroku.com
+  app_domain: localhost
 
   # How many activities should activity feeds display?
   activities_per_page: 25
@@ -65,7 +65,7 @@ defaults: &defaults
     :inbox_task_list: Inbox
 
     # Set to true when using Gmail
-    :enable_starttls_auto: false
+    :enable_starttls_auto: true
 
     # Set to true if you have Net::SMTPSyntaxError errors when sending email.
     # Rails has sometimes a problem when sending email from "Name <address@host.com>".

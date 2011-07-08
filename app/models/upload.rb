@@ -181,3 +181,23 @@ class Upload < RoleRecord
     true
   end
 end
+
+# == Schema Information
+#
+# Table name: uploads
+#
+#  id                 :integer(4)      not null, primary key
+#  user_id            :integer(4)
+#  project_id         :integer(4)
+#  comment_id         :integer(4)
+#  page_id            :integer(4)
+#  description        :text
+#  asset_file_name    :string(255)
+#  asset_content_type :string(255)
+#  asset_file_size    :integer(4)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  deleted            :boolean(1)      default(FALSE), not null
+#  is_private         :boolean(1)      default(FALSE), not null
+#
+

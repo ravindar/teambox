@@ -18,3 +18,15 @@ class ResetPassword < ActiveRecord::Base
     self.expiration_date = 2.weeks.from_now
   end
 end
+# == Schema Information
+#
+# Table name: reset_passwords
+#
+#  id              :integer(4)      not null, primary key
+#  user_id         :integer(4)
+#  reset_code      :string(255)
+#  expiration_date :datetime
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+

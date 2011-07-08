@@ -809,6 +809,7 @@ en:
       optional: You can provide better instructions for this Task below.
       body_html: What needs to be done? <i>optional</i>
       due_on_html: Needs to be done before... <i>optional</i>
+      estimate: Estimate in story points <i>optional</i>
       assigned_to: Who is responsible?
       assigned_to_nobody: Nobody
     assigned:
@@ -830,6 +831,7 @@ en:
       sending: Creating the task…
     show:
       title: "Task: %{name}"
+      estimate: "Estimate %{estimate}"
     link:
       new: + Add Task
       edit: Edit

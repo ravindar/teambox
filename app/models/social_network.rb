@@ -28,3 +28,14 @@ class SocialNetwork < ActiveRecord::Base
     end
   end
 end
+# == Schema Information
+#
+# Table name: social_networks
+#
+#  id                   :integer(4)      not null, primary key
+#  card_id              :integer(4)
+#  name                 :string(255)
+#  account_network_type :integer(4)      default(0)
+#  account_type         :integer(4)      default(0)
+#
+

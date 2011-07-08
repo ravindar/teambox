@@ -72,3 +72,16 @@ class Membership < ActiveRecord::Base
     base
   end
 end
+
+# == Schema Information
+#
+# Table name: memberships
+#
+#  id              :integer(4)      not null, primary key
+#  user_id         :integer(4)
+#  organization_id :integer(4)
+#  role            :integer(4)      default(20)
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+

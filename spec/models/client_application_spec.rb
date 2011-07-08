@@ -27,3 +27,20 @@ describe ClientApplication do
 
 end
 
+
+# == Schema Information
+#
+# Table name: client_applications
+#
+#  id           :integer(4)      not null, primary key
+#  name         :string(255)
+#  url          :string(255)
+#  support_url  :string(255)
+#  callback_url :string(255)
+#  key          :string(40)
+#  secret       :string(40)
+#  user_id      :integer(4)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+

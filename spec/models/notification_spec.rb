@@ -221,3 +221,20 @@ describe Notification do
 
   end
 end
+
+# == Schema Information
+#
+# Table name: notifications
+#
+#  id          :integer(4)      not null, primary key
+#  person_id   :integer(4)
+#  user_id     :integer(4)
+#  comment_id  :integer(4)
+#  target_id   :integer(4)
+#  target_type :string(255)
+#  sent        :boolean(1)      default(FALSE)
+#  read        :boolean(1)      default(FALSE)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+

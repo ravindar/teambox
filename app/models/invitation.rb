@@ -151,3 +151,21 @@ class Invitation < RoleRecord
   end
 
 end
+
+# == Schema Information
+#
+# Table name: invitations
+#
+#  id              :integer(4)      not null, primary key
+#  user_id         :integer(4)
+#  project_id      :integer(4)
+#  role            :integer(4)      default(2)
+#  email           :string(255)
+#  invited_user_id :integer(4)
+#  token           :string(255)
+#  created_at      :datetime
+#  updated_at      :datetime
+#  membership      :integer(4)      default(10)
+#  deleted         :boolean(1)      default(FALSE), not null
+#
+

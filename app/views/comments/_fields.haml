@@ -42,6 +42,8 @@
         = task_form.label :assigned_id, t('comments.new.assigned_to')
         = task_form.select :assigned_id, [], {}, :'data-assigned' => task_form.object.assigned_id
         = task_form.label :due_on
+        = task_form.label :estimate
+        = task_form.text_field :estimate
         = date_picker(task_form, :due_on)
 
     - if !local_assigns[:project]
@@ -67,6 +69,9 @@
               = conversation_form.select :assigned_id, [], {}, :'data-assigned' => conversation_form.object.assigned_id, :disabled => true
             .fields
               = date_picker(conversation_form, :due_on, {}, :disabled => true)
+            .fields
+              = conversation_form.label :estimate
+              = conversation_form.text_field :estimate
           .submit
             = link_to t('common.cancel'), '#cancel_conversion', :class => 'cancel'
             = f.submit t('comments.convert_form.submit'), :'data-disable-with' => t('comments.new.sending'), :disabled => true

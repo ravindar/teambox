@@ -81,3 +81,18 @@ class AppLink < ActiveRecord::Base
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: app_links
+#
+#  id                :integer(4)      not null, primary key
+#  user_id           :integer(4)
+#  provider          :string(255)
+#  app_user_id       :string(255)
+#  custom_attributes :text
+#  created_at        :datetime
+#  updated_at        :datetime
+#  credentials       :text
+#
+
